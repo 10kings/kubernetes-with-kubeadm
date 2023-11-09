@@ -98,3 +98,10 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
+
+Step 4: Initializing the Kubernetes Cluster. See the <a href="https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/>official kuhbernetes guide </a> for more information
+
+On the master node, you will initialize the cluster:
+```bash
+sudo kubeadm init
+```
